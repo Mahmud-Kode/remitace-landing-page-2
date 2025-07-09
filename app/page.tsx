@@ -44,30 +44,30 @@ export default function RemitaceLanding() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary via-red-600 to-red-700 text-white py-20">
+        <section className="bg-white text-gray-900 py-20">
           <div className="container mx-auto px-4 lg:px-6">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
                   Fast, flexible and secure IMTO gateway services
                 </h1>
-                <p className="text-xl mb-8 text-white/90 leading-relaxed">
+                <p className="text-xl mb-8 text-gray-600 leading-relaxed">
                   Fast, flexible and secure international money transfer gateway across the world. Save time and money
                   when you serve customers internationally with Remitace.
                 </p>
 
                 {/* Trust Badge */}
                 <div className="flex items-center space-x-2 mb-8">
-                  <div className="flex items-center bg-white/10 rounded-lg px-4 py-2">
+                  <div className="flex items-center bg-gray-100 rounded-lg px-4 py-2">
                     <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                    <span className="ml-2 font-semibold">Trustpilot</span>
+                    <span className="ml-2 font-semibold text-primary">Trustpilot</span>
                     <div className="ml-3 text-sm">
                       <div className="flex">
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
                         ))}
                       </div>
-                      <div className="text-white/80">Great • 4.2 out of 5</div>
+                      <div className="text-gray-600">Great • 4.2 out of 5</div>
                     </div>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export default function RemitaceLanding() {
           <div className="container mx-auto px-4 lg:px-6">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-8">How to onboard your IMTO with Remitace?</h2>
+                <h2 className="text-3xl font-bold text-primary mb-8">How to onboard your IMTO with Remitace?</h2>
 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -168,7 +168,7 @@ export default function RemitaceLanding() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 lg:px-6">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Integration methods for IMTO services</h2>
+              <h2 className="text-3xl font-bold text-primary mb-4">Integration methods for IMTO services</h2>
               <p className="text-lg text-gray-600 max-w-4xl mx-auto">
                 We offer you a choice of ways to integrate with our gateway services. But the choice will depend on
                 where you're operating your business from. Please remember, that some integration methods may incur a
@@ -231,7 +231,7 @@ export default function RemitaceLanding() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 lg:px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Choose Remitace?</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">Why Choose Remitace?</h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Built specifically for IMTOs, our platform provides everything you need to serve your customers
                 efficiently and securely.
@@ -309,7 +309,7 @@ export default function RemitaceLanding() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-primary">
+        <section className="py-20 bg-gray-800">
           <div className="container mx-auto px-4 lg:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Transform Your IMTO Business?</h2>
@@ -335,7 +335,7 @@ export default function RemitaceLanding() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-700 text-white py-12">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
