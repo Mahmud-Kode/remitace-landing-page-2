@@ -2,21 +2,23 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { OnboardingCalculator } from "@/components/onboarding-calculator"
-import { ArrowRight, Shield, Globe, Zap, Users, CheckCircle, Star, ChevronLeft, ChevronRight } from "lucide-react"
+import { ImageSlideshow } from "@/components/image-slideshow"
+import { ArrowRight, Shield, Globe, Zap, Users, CheckCircle, ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
+import { RemitaceLogo } from "@/components/remitace-logo"
 
 export default function RemitaceLanding() {
+  // Placeholder images - replace these with your actual image URLs
+  const slideshowImages = ["/images/global-network.png", "/images/global-reach.png"]
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-primary text-white py-3 px-4">
+      <header className="bg-gray-600 text-white py-3 px-4">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">R</span>
-              </div>
-              <span className="text-xl font-bold">Remitace</span>
+              <RemitaceLogo className="h-8" />
             </div>
             <div className="hidden md:flex items-center space-x-4 text-sm">
               <span>English</span>
@@ -35,8 +37,8 @@ export default function RemitaceLanding() {
             <Link href="#" className="hover:underline">
               Compliance Center
             </Link>
-            <Button variant="secondary" size="sm" className="bg-white text-primary hover:bg-gray-100">
-              Download App
+            <Button variant="secondary" size="sm" className="bg-white text-gray-600 hover:bg-gray-100">
+              Login
             </Button>
           </div>
         </div>
@@ -55,22 +57,6 @@ export default function RemitaceLanding() {
                   Fast, flexible and secure international money transfer gateway across the world. Save time and money
                   when you serve customers internationally with Remitace.
                 </p>
-
-                {/* Trust Badge */}
-                <div className="flex items-center space-x-2 mb-8">
-                  <div className="flex items-center bg-gray-100 rounded-lg px-4 py-2">
-                    <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                    <span className="ml-2 font-semibold text-primary">Trustpilot</span>
-                    <div className="ml-3 text-sm">
-                      <div className="flex">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
-                        ))}
-                      </div>
-                      <div className="text-gray-600">Great • 4.2 out of 5</div>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div className="flex justify-center lg:justify-end">
@@ -83,8 +69,8 @@ export default function RemitaceLanding() {
         {/* How to Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 lg:px-6">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
+            <div className="grid lg:grid-cols-5 gap-12 items-center">
+              <div className="lg:col-span-2">
                 <h2 className="text-3xl font-bold text-primary mb-8">How to onboard your IMTO with Remitace?</h2>
 
                 <div className="space-y-6">
@@ -152,13 +138,8 @@ export default function RemitaceLanding() {
                   </div>
                 </div>
               </div>
-
-              <div className="flex justify-center">
-                <img
-                  src="/placeholder.svg?height=400&width=500"
-                  alt="Professional using Remitace services"
-                  className="rounded-lg shadow-lg max-w-full h-auto"
-                />
+              <div className="lg:col-span-3">
+                <ImageSlideshow images={slideshowImages} />
               </div>
             </div>
           </div>
@@ -340,10 +321,7 @@ export default function RemitaceLanding() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">R</span>
-                </div>
-                <span className="text-xl font-bold">Remitace</span>
+                <RemitaceLogo className="h-8" />
               </div>
               <p className="text-gray-400">
                 The trusted gateway for International Monetary Transfer Organizations worldwide.
